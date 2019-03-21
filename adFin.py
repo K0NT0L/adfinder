@@ -65,12 +65,12 @@ baca = read(pg, ukuran)
 log = (targetnya, lists)
 try:
         for admin in pg:
-        admin = admin.replace('\n\n','')
-        star = '/' + admin
-        hae = httplib.HTTPConnection(site)
-        F.request('GET', star)
-        OhYeah = F.getresponse()
-        print '%s %s %s' % (admin, mtucxdz.status, mtucxdz.reason)
+                       admin = admin.replace('\n\n','')
+                       star = '/' + admin
+                       hae = httplib.HTTPConnection(site)
+                       F.request('GET', star)
+                       OhYeah = F.getresponse()
+                       print '%s %s %s' % (admin, mtucxdz.status, mtucxdz.reason)
         if OhYeah.status == 200:
                        print "\033[98mMencoba : \033[00m%s => \033[92mDitemukan\033[00m",str(log) 
         else:
