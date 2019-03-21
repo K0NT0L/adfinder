@@ -30,7 +30,7 @@ def findAdmin():
 	print "\033[00m"
 try:
 	print bcolors.YELLOW + "\n\t[*] Checking the website " +  site + bcolors.ENDC
-  print bcolors.YELLOW + "\t[*] Scanning: " + site + bcolors.ENDC + "\n"
+  print bcolors.YELLOW + "\t[*] Scanning: "+site+ bcolors.ENDC+"\n"
             
 
             # This will Loop through Word List to get Admin Page
