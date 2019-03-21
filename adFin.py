@@ -70,7 +70,7 @@ try:
                        hae = httplib.HTTPConnection(site)
                        F.request('GET', star)
                        OhYeah = F.getresponse()
-                       print '%s %s %s' % (admin, mtucxdz.status, mtucxdz.reason)
+                       print '%s %s %s' % (admin, hae.status, hae.reason)
         if OhYeah.status == 200:
                        print "\033[98mMencoba : \033[00m%s => \033[92mDitemukan\033[00m",str(log) 
         else:
