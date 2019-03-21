@@ -19,8 +19,6 @@ import time
 import httplib
 import os
  
- 
- 
 def slowprint(s):
  
     for c in s + '\n':
@@ -39,14 +37,13 @@ def slowprint(s):
     ENDC = '\033[0m'
 
 ztack = """
- \033[97m#####################################
+ \033[97m####################################################################
 \033[97m|\033[95m*** Admin Panel Finder ***
 \033[97m|\033[96mAuthor : \033[94mStar  
 \033[97m|\033[97m\033[93mShootz : \033[98mSunda Cyber Army\033[00m   
 \033[97m|\033[92mNote : Jika TidaK Ketemu Disarankan Untuk \n\033[97m|\033[92mMenganti/merubah Page Admin List Yg Tersedia\033[97m
-|\033[97m#####################################\033[00m
+|\033[97m####################################################################\033[00m
 """
-
 # Real Fun Start Here!
 print ""   
 print ztack
@@ -67,23 +64,14 @@ ukuran = filesize(lolox)
 baca = read(pg, ukuran)
 log = (targetnya, lists)
 try:
- 
-    for admin in pg:
- 
+        for admin in pg:
         admin = admin.replace('\n\n','')
- 
         star = '/' + admin
- 
         hae = httplib.HTTPConnection(site)
- 
         F.request('GET', star)
- 
-        OhYeah = mtucxdz.getresponse()
- 
+        OhYeah = F.getresponse()
         print '%s %s %s' % (admin, mtucxdz.status, mtucxdz.reason)
- 
         if OhYeah.status == 200:
- 
-                        print "Mencoba : %s => Ditemukan",str(log) 
+                       print "\033[98mMencoba : \033[00m%s => \033[92mDitemukan\033[00m",str(log) 
         else:
             print"Mencoba : %s => tidak di temukan",str(log) 
